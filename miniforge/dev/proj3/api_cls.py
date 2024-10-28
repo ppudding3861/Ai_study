@@ -53,7 +53,7 @@ step3 주석처리
 
 파이토치 버전이 업그레이드 됨
 
-다운그레이 방법
++ 다운그레이 방법
 pip uninstall python-multipart
 
 pip install python-multipart==0.0.12
