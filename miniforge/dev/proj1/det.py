@@ -75,3 +75,6 @@ rgb_annotated_image = cv2.cvtColor(annotated_image, cv2.COLOR_BGR2RGB)
 # cv2_imshow(rgb_annotated_image)
 cv2.imshow("test", rgb_annotated_image)
 cv2.waitKey(0)
+
+
+
