@@ -4,6 +4,7 @@ from typing import Tuple, Union
 import math
 import cv2
 import numpy as np
+import cors_config  # CORS 설정 모듈 불러오기
 
 MARGIN = 10  # pixels
 ROW_SIZE = 10  # pixels
@@ -86,6 +87,8 @@ detector = vision.FaceDetector.create_from_options(options)
 
 
 app = FastAPI()
+# STEP 1: CORS 설정 적용
+cors_config.setup_cors(app)
 
 
 @app.get("/items/{item_id}")
